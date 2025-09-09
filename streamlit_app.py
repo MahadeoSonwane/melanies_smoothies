@@ -16,11 +16,6 @@ st.write('The name on your Smoothie will be:', name_on_order)
 # Convert dataframe column to list for multiselect options
 
 # Multiselect for up to 5 ingredients
-ingredients_list = st.multiselect(
-    'Choose up to 5 ingredients:',
-    fruit_options,
-    max_selections=5
-)
 
 my_insert_stmt = None
 
