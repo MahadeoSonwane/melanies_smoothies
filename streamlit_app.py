@@ -19,11 +19,6 @@ st.write('The name on your Smoothie will be:', name_on_order)
 
 my_insert_stmt = None
 
-if ingredients_list:
-    # Create a space-separated string of chosen fruits
-    ingredients_string = ' '.join(ingredients_list)
-    st.write('Ingredients chosen:', ingredients_string)
-
     # Prepare SQL insert statement safely with placeholders
     # Note: Streamlit Snowflake API doesn't support parameterized queries directly
     # So be mindful of SQL injection if inputs come from untrusted sources
