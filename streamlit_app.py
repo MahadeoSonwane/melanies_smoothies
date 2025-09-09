@@ -1,6 +1,5 @@
 # Import python packages
 import streamlit as st
-from snowflake.functions import col
 
 # Write directly to the app
 st.title('🥤 Customize Your Smoothie! 🥤')
