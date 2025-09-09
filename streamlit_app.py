@@ -23,9 +23,7 @@ st.write('The name on your Smoothie will be:', name_on_order)
 
 # Multiselect for ingredients
 ingredients_list = st.multiselect(
-    'Choose up to 5 ingredients:',
-    my_dataframe['FRUIT_NAME'].to_list(),  # pass a list of strings here
-    max_selections=5
+    'Choose up to 5 ingredients:'
 )
 
 if ingredients_list:
