@@ -12,7 +12,6 @@ st.write('The name on your Smoothie will be:', name_on_order)
 # Connect to Snowflake using st.connection
 
 # Query fruit options from Snowflake
-st.dataframe(my_dataframe, use_container_width=True)
 
 # Convert dataframe column to list for multiselect options
 fruit_options = [row['FRUIT_NAME'] for row in my_dataframe.collect()]
