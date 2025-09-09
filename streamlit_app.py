@@ -22,10 +22,9 @@ my_insert_stmt = None
     # Prepare SQL insert statement safely with placeholders
     # Note: Streamlit Snowflake API doesn't support parameterized queries directly
     # So be mindful of SQL injection if inputs come from untrusted sources
-    my_insert_stmt = f"""
         INSERT INTO smoothies.public.orders(ingredients, name_on_order)
         VALUES ('{ingredients_string}', '{name_on_order}')
-    """
+
 
     st.write('SQL statement:')
     st.code(my_insert_stmt)
