@@ -12,7 +12,7 @@ st.write('The name on your Smoothie will be:', name_on_order)
 
 # Connect to Snowflake (depending on your setup)
 # Option 1: Use get_active_session if available
-session = get_active_session()
+
 
 # Option 2: Use st.connection if your Streamlit supports it
 # cnx = st.connection("snowflake")
