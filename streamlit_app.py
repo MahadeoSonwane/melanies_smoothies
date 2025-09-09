@@ -14,7 +14,6 @@ st.write('The name on your Smoothie will be:', name_on_order)
 # Query fruit options from Snowflake
 
 # Convert dataframe column to list for multiselect options
-fruit_options = [row['FRUIT_NAME'] for row in my_dataframe.collect()]
 
 # Multiselect for up to 5 ingredients
 ingredients_list = st.multiselect(
