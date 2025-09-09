@@ -11,8 +11,6 @@ st.write('The name on your Smoothie will be:', name_on_order)
 
 # Connect to Snowflake using st.connection
 
-session = cnx.session()
-
 # Query fruit options from Snowflake
 my_dataframe = session.table("smoothies.public.fruit_options").select(col("FRUIT_NAME"))
 st.dataframe(my_dataframe, use_container_width=True)
