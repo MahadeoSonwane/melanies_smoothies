@@ -2,3 +2,6 @@
 streamlit
 snowflake-snowpark-python
 
+pip show snowflake-snowpark-python
+
+
